@@ -1,0 +1,69 @@
+.navigation {
+    background-color: $color-grey-dark-2;
+    color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__logo-box {
+        img {
+            height: 8rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__list {
+        font-size: $defoult-font-size;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(8,max-content);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+        justify-content: end;
+
+    }
+}
+
+.section__slider {
+    background-color: green;
+    height: 50rem;
+}
+
+.section__about {
+    height: 50rem;
+    background-color: purple;
+
+    &-text{
+
+    }
+}
+
+.section__makeup {
+    height: 50rem;
+    background-color: yellowgreen;
+}
+
+.section__portfolio{
+    height: 50rem;
+    background-color: pink;
+}
+
+.section__reviews {
+    height: 50rem;
+    background-color:$color-grey-light-2;
+}
+.section__contact {
+    height: 50rem;
+    background-color: orange;
+}
+
+.section__googlemap {
+    height: 50rem;
+    background-color: brown;
+}
+
+.section__footer {
+    height: 50rem;
+    background-color: gray;
+}

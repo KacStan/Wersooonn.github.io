@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: Josefin Sans; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+
+/*Change color selection from white to primary=blue
+
+ ::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+*/
+.heading-primary {
+  font-size: 15rem;
+  color: #304ffe !important;
+  background-image: linear-gradient(to right, #3d5afe, #304ffe);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s; }
+  .heading-primary:hover {
+    transform: skewY(2deg) skewX(10deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+h2 {
+  font-size: 5rem;
+  background-image: linear-gradient(to right, #3d5afe, #304ffe);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s; }
+  h2:hover {
+    transform: skewY(2deg) skewX(10deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+h3 {
+  font-size: 3rem;
+  color: #1b1a1a; }
+
+.card {
+  position: relative;
+  perspective: 250rem;
+  height: 32rem;
+  transition: all .6s;
+  font-size: 1.6rem; }
+  .card__side {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, #3d5afe, #304ffe); }
+    .card__side-front--1, .card__side-front--2, .card__side-front--3 {
+      text-transform: uppercase; }
+    .card__side-back--1, .card__side-back--2, .card__side-back--3 {
+      transform: rotateY(-180deg);
+      text-align: center;
+      color: #1b1a1a; }
+  .card:hover .card__side-front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side-back {
+    transform: rotateY(0); }
+
+.navigation {
+  background-color: #424242;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+  .navigation__logo-box img {
+    height: 6rem;
+    margin: 1rem 0 0 1.5rem; }
+  .navigation__list {
+    font-size: 1.6rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(8, max-content);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    align-items: center; }
+  .navigation__item-icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #fff; }
+
+.section__slider {
+  background-color: green;
+  height: 50rem; }
+
+.section__about {
+  background-color: #f7f4f4;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  grid-gap: 5rem; }
+  .section__about > * {
+    color: #616161; }
+  .section__about__heading {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5rem; }
+  .section__about__text {
+    grid-row: 2 / 3;
+    grid-column: 2 / span 4;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.8rem; }
+    .section__about__text p {
+      margin-top: 2rem; }
+  .section__about__photo {
+    grid-row: 2 / 3;
+    grid-column: 6 / span 4;
+    justify-self: center;
+    align-self: center;
+    background-image: url(../img/my-photo.jpeg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+  .section__about__card {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 0 repeat(3, 1fr) 0;
+    grid-template-rows: min-content;
+    grid-column-gap: 10rem;
+    margin-bottom: 10rem; }
+    .section__about__card--1 {
+      grid-column: 2/ span 1; }
+    .section__about__card--2 {
+      grid-column: 3/ span 1; }
+    .section__about__card--3 {
+      grid-column: 4 / span 1; }
+
+.section__makeup {
+  height: 50rem;
+  background-color: yellowgreen; }
+
+.section__portfolio {
+  height: 50rem;
+  background-color: pink; }
+
+.section__reviews {
+  height: 50rem;
+  background-color: #e0e0e0; }
+
+.section__contact {
+  height: 50rem;
+  background-color: orange; }
+
+.section__googlemap {
+  height: 50rem;
+  background-color: brown; }
+
+.section__footer {
+  height: 50rem;
+  background-color: gray; }

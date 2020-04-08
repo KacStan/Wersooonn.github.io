@@ -1,0 +1,35 @@
+.navigation {
+    background-color: red;
+
+    display: grid;
+    grid-template-columns: repeat(min-fit, 1fr);
+
+}
+
+.section__slider {
+    background-color: green;
+}
+
+.section__about {
+    background-color: purple;
+}
+
+.section__makeup {
+    background-color: yellowgreen;
+}
+
+.section__portfolio{
+    background-color: pink;
+}
+
+.section__contact {
+    background-color: orange;
+}
+
+.section__googlemap {
+    background-color: brown;
+}
+
+.section__footer {
+    background-color: gray;
+}

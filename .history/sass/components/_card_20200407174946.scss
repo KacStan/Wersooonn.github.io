@@ -1,0 +1,26 @@
+.card {
+    margin-bottom: 10rem;
+    width: 100%;
+    background-color: #fff;
+
+    height: 32rem;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+
+    &__front--1 {
+        height: 100%;
+        width: 100%;
+        background-color: orangered;
+        //transform: rotateY(-180deg);
+    }
+
+    &__back--1 {
+        background-color: orchid;
+        transform: rotateY(-180deg);
+        z-index: 0;
+
+
+    }
+}

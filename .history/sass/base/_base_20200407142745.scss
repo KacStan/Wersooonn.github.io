@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // Define 1rem = 10px = 62.5%
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+/*Change color selection from white to primary=blue
+
+ ::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+*/

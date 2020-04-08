@@ -1,0 +1,60 @@
+.navigation {
+    background-color: red;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__logo-box {
+        img {
+            height: 8rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__nav {
+
+    }
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(8,min-content);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+}
+
+.section__slider {
+    background-color: green;
+}
+
+.section__about {
+    background-color: purple;
+}
+
+.section__makeup {
+    background-color: yellowgreen;
+}
+
+.section__portfolio{
+    background-color: pink;
+}
+
+.section__contact {
+    background-color: orange;
+}
+
+.section__googlemap {
+    background-color: brown;
+}
+
+.section__footer {
+    background-color: gray;
+}

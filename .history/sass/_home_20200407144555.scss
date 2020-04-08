@@ -1,0 +1,55 @@
+.navigation {
+    background-color: $color-grey-dark-2;
+    color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__logo-box {
+        img {
+            height: 8rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__list {
+        font-size: $defoult-font-size;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(8,max-content);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+        justify-content: end;
+
+    }
+}
+
+.section__slider {
+    background-color: green;
+    height: 50rem;
+}
+
+.section__about {
+    background-color: purple;
+}
+
+.section__makeup {
+    background-color: yellowgreen;
+}
+
+.section__portfolio{
+    background-color: pink;
+}
+
+.section__contact {
+    background-color: orange;
+}
+
+.section__googlemap {
+    background-color: brown;
+}
+
+.section__footer {
+    background-color: gray;
+}

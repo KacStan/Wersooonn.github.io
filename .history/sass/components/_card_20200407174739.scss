@@ -1,0 +1,19 @@
+.card {
+    margin-bottom: 10rem;
+    width: 100%;
+    background-color: #fff;
+
+    height: 32rem;
+
+    &__front--1 {
+        height: 100%;
+        width: 100%;
+        background-color: orangered;
+        transform: rotate(180deg);
+    }
+
+    &__back--1 {
+        background-color: orchid;
+        transform: rotate(-180deg);
+    }
+}

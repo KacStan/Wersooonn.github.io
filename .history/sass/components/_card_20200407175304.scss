@@ -1,0 +1,23 @@
+.card {
+    margin-bottom: 10rem;
+    width: 100%;
+    background-color: #fff;
+
+    height: 32rem;
+
+    &__front--1 {
+        height: 100%;
+        width: 100%;
+        background-color: orangered;
+        z-index: 10;
+    }
+
+    &__back--1 {
+        background-color: orchid;
+        transform: rotateY(-180deg);
+        z-index: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
