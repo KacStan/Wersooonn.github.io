@@ -1,0 +1,23 @@
+.heading-primary {
+    font-size: 15rem;
+    color: $color-primary!important;
+    @include headingTransform;
+}
+
+h2 {
+    //color: $color-primary;
+    font-size: 5rem;
+    @include headingTransform;
+}
+
+h3 {
+    font-size: 3rem;
+    color: rgb(27, 26, 26);
+}
+
+h4 {
+    font-size: 3rem;
+    color: rgb(27, 26, 26);
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+    width: 20%;
+}

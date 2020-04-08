@@ -1,0 +1,163 @@
+.navigation {
+    background-color: $color-grey-dark-3;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    &__logo-box {
+        img {
+            height: 6rem;
+            margin: 1rem 0 0 1.5rem;
+        }
+    }
+
+    &__list {
+        font-size: $defoult-font-size;
+        list-style: none;
+
+        //FLEX
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        /* GRID
+        display: grid;
+        grid-template-columns: repeat(8,max-content);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+        align-items: center;
+        */
+    }
+
+    &__item-icon {
+        height: 2rem;
+        width: 2rem;
+        fill: #fff;
+    }
+}
+
+.section__slider {
+    background-color: green;
+    height: 50rem;
+}
+
+.section__about {
+    background-color: $color-grey-light-3;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 5rem;
+
+
+    & > * {
+        color: $color-grey-dark-1;
+    }
+
+    &__heading {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-self: center;
+        align-self: center;
+        margin-top: 5rem;
+
+    }
+
+    &__text{
+        grid-row: 2 / 3;
+        grid-column: 2 / span 4;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.8rem;
+
+        p{
+            margin-top: 2rem;
+        }
+    }
+
+    &__photo {
+        grid-row: 2 / 3;
+        grid-column: 6 / span 4;
+        justify-self: center;
+        align-self: center;
+        background-image: url(../img/my-photo.jpeg);
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        box-shadow: 0 2rem 4rem rgba(0,0,0, .2);
+    }
+
+    &__card {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 0 repeat(3, 1fr) 0;
+        grid-template-rows: min-content;
+        grid-column-gap: 10rem;
+        margin-bottom: 10rem;
+
+        &--1 {
+           grid-column: 2/ span 1;
+        }
+
+        &--2 {
+            grid-column: 3/ span 1;
+        }
+
+        &--3 {
+            grid-column: 4 / span 1;
+        }
+    }
+}
+
+.section__makeup {
+    background-color: $color-grey-light-3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    justify-content: center;
+
+    &__heading {
+        grid-column: 1 / -1;
+    }
+
+    &__photo {
+
+    }
+
+    &__text {
+
+    }
+}
+
+.section__portfolio{
+    height: 50rem;
+    background-color: pink;
+}
+
+.section__reviews {
+    height: 50rem;
+    background-color:$color-grey-light-2;
+}
+.section__contact {
+    height: 50rem;
+    background-color: orange;
+}
+
+.section__googlemap {
+    height: 50rem;
+    background-color: brown;
+}
+
+.section__footer {
+    height: 50rem;
+    background-color: gray;
+}

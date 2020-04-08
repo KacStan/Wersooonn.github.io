@@ -1,0 +1,31 @@
+.heading-primary {
+    font-size: 15rem;
+    color: $color-primary!important;
+    @include headingTransform;
+}
+
+h2 {
+    //color: $color-primary;
+    font-size: 5rem;
+    @include headingTransform;
+}
+
+h3 {
+    font-size: 3rem;
+    color: rgb(27, 26, 26);
+}
+
+h4 {
+    color: $color-primary;
+    display: inline-block;
+    border-radius: 3px;
+    border: hidden;
+    transition: all .2s;
+
+
+    &:hover {
+        background-color: $color-grey-light-1;
+        transform: scale(1.03) skewX(10deg);
+        box-shadow: 0 2rem 4rem rgba(0,0,0, .2);
+    }
+}
