@@ -8,14 +8,13 @@
 
 html {
     font-size: 62.5%; // Define 1rem = 10px = 62.5%
-    box-sizing: border-box;
+    font-family: $defoult-font-family;
 }
 
 body {
+    box-sizing: border-box;
     padding: 3rem;
-    font-family: $defoult-font-family;
-    font-weight: 300;
-    line-height: 1.6;
+    width: 120rem;
 }
 
 /*Change color selection from white to primary=blue

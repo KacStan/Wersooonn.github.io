@@ -167,10 +167,12 @@
 
 }
 
-// Section portfolio
-
-.section__portfolio {
-    background-color: $color-grey-light-2;
+.section__portfolio{
+    height: 50rem;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
 
 .section__reviews {

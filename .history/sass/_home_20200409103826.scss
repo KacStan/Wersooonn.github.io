@@ -169,8 +169,24 @@
 
 // Section portfolio
 
-.section__portfolio {
-    background-color: $color-grey-light-2;
+.gallery {
+    //height: 50rem;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+
+    &__item {
+        &--1 {
+
+        }
+    }
+    &__gallery__img {
+
+    }
+
 }
 
 .section__reviews {
