@@ -1,0 +1,34 @@
+
+    .story {
+        display: grid;
+        grid-template-columns: min-content 1fr ;
+        grid-template-rows: repeat(2, 1fr);
+
+        &__shape__icon {
+
+        }
+
+        &__text-box {
+
+            &--text {
+
+            }
+
+        }
+
+        &__stars {
+
+            &__icon-full {
+
+            }
+
+            &__icon-empty {
+
+            }
+        }
+
+        &__icon-like {
+
+        }
+
+    }

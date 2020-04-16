@@ -1,0 +1,78 @@
+    .story {
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: min-content 1fr;
+        justify-items: center;
+        align-items: center;
+
+        &__box {
+            grid-column: 1 /-1;
+            display: flex;
+            justify-items: flex-start;
+            align-items: center;
+            margin: 5rem;
+            padding: 0 5rem;
+            background-color: #fff;
+        }
+
+        &__shape {
+            grid-column: 1 / 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-family: sans-serif;
+
+            &__icon {
+                height: 10rem;
+                width: 10rem;
+                fill: $color-primary-light;
+                padding-right: 2rem;
+            }
+
+        }
+
+        &__text-box {
+            grid-column: 2 / -1;
+            display: grid;
+            grid-template-rows: min-content repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: start;
+            align-items: center;
+
+            &--text {
+                grid-column: 1 / -1;
+            }
+
+            button {
+                display: none;
+            }
+
+        }
+
+        &__stars {
+            grid-column: 1 /-1;
+
+            &__icon-full {
+                height: 2rem;
+                width: 2rem;
+                fill: $color-primary-light;
+            }
+
+            &__icon-empty {
+                height: 2rem;
+                width: 2rem;
+                fill: $color-primary-light;
+            }
+        }
+
+        &__icon-like {
+            height: 2rem;
+            width: 2rem;
+            fill: $color-primary-light;
+        }
+
+    }

@@ -1,0 +1,48 @@
+
+    .story {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: min-content 1fr;
+        justify-items: center;
+        align-items: center;
+
+        &__shape {
+            grid-column: 1 / 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &__icon {
+                height: 5rem;
+                width: 5rem;
+                fill: $color-primary-light;
+            }
+
+        }
+
+        &__text-box {
+            grid-column: 2 / -1;
+
+            &--text {
+
+            }
+
+        }
+
+        &__stars {
+
+            &__icon-full {
+
+            }
+
+            &__icon-empty {
+
+            }
+        }
+
+        &__icon-like {
+
+        }
+
+    }

@@ -208,6 +208,75 @@ h3 {
     object-fit: cover;
     display: block; }
 
+.story {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr;
+  justify-items: center;
+  align-items: center; }
+  .story__box {
+    justify-self: stretch;
+    grid-column: 1 /-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 5rem;
+    padding: 0 5rem;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .story__shape {
+    grid-column: 1 / 2;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin-right: 2rem;
+    background-color: #1a237e;
+    position: relative; }
+    .story__shape p {
+      font-weight: 600;
+      color: white;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 5rem;
+      left: 5rem;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase; }
+    .story__shape__icon {
+      height: 10rem;
+      width: 10rem;
+      fill: #3d5afe;
+      padding-right: 2rem; }
+  .story__text-box {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-rows: min-content repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; }
+    .story__text-box--text {
+      grid-column: 1 / -1; }
+    .story__text-box button {
+      display: none; }
+  .story__stars {
+    grid-column: 1 /-1;
+    margin-top: 3rem; }
+    .story__stars__icon-full {
+      height: 2rem;
+      width: 2rem;
+      fill: #3d5afe; }
+    .story__stars__icon-empty {
+      height: 2rem;
+      width: 2rem;
+      fill: #3d5afe; }
+  .story__icon-like {
+    height: 2rem;
+    width: 2rem;
+    fill: #3d5afe; }
+
 .nav-scrolled {
   background-color: rgba(51, 51, 51, 0.8) !important;
   transition: all .1s; }
@@ -334,8 +403,10 @@ h3 {
   background-color: #e0e0e0; }
 
 .section__reviews {
-  height: 50rem;
   background-color: #e0e0e0; }
+  .section__reviews__heading {
+    grid-column: 1 / -1;
+    margin-top: 10rem; }
 
 .section__contact {
   height: 50rem;

@@ -1,0 +1,95 @@
+    .story {
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: min-content 1fr;
+        justify-items: center;
+        align-items: center;
+
+        &__box {
+            justify-self: stretch;
+            grid-column: 1 /-1;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-items: center;
+            margin: 5rem;
+            padding: 0 5rem;
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+        }
+
+        &__shape {
+            grid-column: 1 / 2;
+            text-transform: uppercase;
+            font-size: 1rem;
+            border-radius: 50%;
+            height: 10rem;
+            width: 10rem;
+            margin-right: 2rem;
+            background-color: orangered;
+            position: relative;
+
+            p {
+                font-weight: 600;
+                color: white;
+                position: absolute;
+                top: 5rem ;
+                left: 5rem;
+                transform: translate(-50%, -50%);
+                text-transform: uppercase;
+            }
+
+            &__icon {
+                height: 10rem;
+                width: 10rem;
+                fill: $color-primary-light;
+                padding-right: 2rem;
+            }
+
+        }
+
+        &__text-box {
+            grid-column: 2 / -1;
+            display: grid;
+            grid-template-rows: min-content repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+            &--text {
+                grid-column: 1 / -1;
+            }
+
+            button {
+                display: none;
+            }
+
+        }
+
+        &__stars {
+            grid-column: 1 /-1;
+            margin-top: 3rem;
+
+            &__icon-full {
+                height: 2rem;
+                width: 2rem;
+                fill: $color-primary-light;
+            }
+
+            &__icon-empty {
+                height: 2rem;
+                width: 2rem;
+                fill: $color-primary-light;
+            }
+        }
+
+        &__icon-like {
+            height: 2rem;
+            width: 2rem;
+            fill: $color-primary-light;
+        }
+
+
+
+    }
