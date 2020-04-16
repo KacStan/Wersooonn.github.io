@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    transition: all 5s;
 
     &__logo-box {
         img {

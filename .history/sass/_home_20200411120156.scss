@@ -1,18 +1,18 @@
 .nav-scrolled {
-
+    margin-top: -3rem;
     background-color: rgba($color-grey-dark-3, .8)!important;
     transition: all .1s;
 }
 
 .navigation {
-    margin-top: -3rem;
     background-color: $color-grey-dark-3;
+    display: inline-block;
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
     position: fixed;
+    width: 100%;
     z-index: 10;
-    width: calc(100vw - 7.8rem);
 
     display: grid;
     grid-template-columns: 1fr 1fr;

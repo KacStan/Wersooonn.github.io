@@ -1,11 +1,10 @@
 .nav-scrolled {
-
+    margin-top: -3rem;
     background-color: rgba($color-grey-dark-3, .8)!important;
     transition: all .1s;
 }
 
 .navigation {
-    margin-top: -3rem;
     background-color: $color-grey-dark-3;
     color: #fff;
     text-transform: uppercase;

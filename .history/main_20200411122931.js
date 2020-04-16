@@ -47,7 +47,7 @@ var responsiveSlider = function() {
 
     setInterval(function() {
       nextSlide()
-    }, 5000);
+    }, 10000);
 
   };
 
@@ -79,5 +79,3 @@ const sectionOneObserver = new IntersectionObserver (function(
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
-
-// ROZWIJANY DIV NA CODEPEN !

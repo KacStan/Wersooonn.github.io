@@ -1,18 +1,16 @@
 .nav-scrolled {
-
+    margin-top: -3rem;
     background-color: rgba($color-grey-dark-3, .8)!important;
     transition: all .1s;
 }
 
 .navigation {
-    margin-top: -3rem;
     background-color: $color-grey-dark-3;
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
     position: fixed;
     z-index: 10;
-    width: calc(100vw - 7.8rem);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,6 +18,7 @@
 
     &__logo-box {
         img {
+
             height: 6rem;
             margin: 1rem 0 0 1.5rem;
         }

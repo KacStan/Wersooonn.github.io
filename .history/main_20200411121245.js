@@ -47,7 +47,7 @@ var responsiveSlider = function() {
 
     setInterval(function() {
       nextSlide()
-    }, 5000);
+    }, 10000);
 
   };
 
@@ -61,7 +61,7 @@ const header = document.querySelector(".navigation");
 const sectionOne = document.querySelector(".section__slider");
 
 const sectionOneOptions = {
-  rootMargin: "-400px 0px 0px 0px"
+  rootMargin: "-100px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver (function(
@@ -79,5 +79,3 @@ const sectionOneObserver = new IntersectionObserver (function(
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
-
-// ROZWIJANY DIV NA CODEPEN !
