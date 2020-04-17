@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 20.5%; // Define 1rem = 10px = 62.5%
+    box-sizing: border-box;
+
+    @media (max-width: 900px) {
+            font-size: 20%;
+        }
+}
+
+body {
+    padding: 3rem;
+    font-family: $defoult-font-family;
+    font-weight: 400;
+    line-height: 1.6;
+}

@@ -1,0 +1,38 @@
+.heading-primary {
+    font-size: 15rem;
+    color: $color-primary!important;
+    @include headingTransform;
+}
+
+h2 {
+    //color: $color-primary;
+    font-size: 5rem;
+    @include headingTransform;
+
+}
+
+h3 {
+    font-size: 3rem;
+    color: rgb(27, 26, 26);
+    @include respond(tab-land) {
+        font-size: 2rem;
+    }
+}
+
+// COSMETIC MARK DECORATION
+.content__info__link:link,
+.content__info__link:visited {
+    color: $color-grey-dark-2;
+    background-color: $color-grey-light-3;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s;
+}
+.content__info__link:hover,
+.content__info__link:active {
+    color: $color-primary;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+    transform: rotate(5deg) scale(1.2);
+}
+

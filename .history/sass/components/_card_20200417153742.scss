@@ -1,0 +1,67 @@
+.card {
+    position: relative;
+    perspective: 250rem;
+    height: 32rem;
+    transition: all .6s;
+    font-size: 2.2rem;
+
+    @include respond(tab-land) {
+        font-size: 1.7rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
+
+    &__side {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0, .45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right bottom, #64b5f6, #1e88e5);
+        padding: 0 2rem;
+
+        @include respond(phone) {
+            position: relative;
+        }
+
+        &-front--1,
+        &-front--2,
+        &-front--3 {
+            text-transform: uppercase;
+        }
+
+        &-back--1,
+        &-back--2,
+        &-back--3 {
+            transform: rotateY(-180deg);
+            text-align: center;
+            color: rgb(27, 26, 26);
+            @include respond(phone) {
+                transform: rotateY(-180deg);
+            }
+        }
+    }
+
+    &:hover &__side-front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side-back {
+        transform: rotateY(0);
+    }
+
+    @include respond(phone) {
+        &:hover &__side-front {
+            transform: rotateY(0);
+        }
+    }
+}
