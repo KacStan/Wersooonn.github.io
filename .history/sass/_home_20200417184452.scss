@@ -42,16 +42,12 @@
         img {
             height: 6rem;
             margin: 1rem 0 0 1.5rem;
-            cursor: pointer;
         }
     }
 
     &__list {
         font-size: $defoult-font-size;
         list-style: none;
-        cursor: pointer;
-
-
 
         @include respond(phone) {
             font-size: 1.3rem;
@@ -71,12 +67,6 @@
         grid-column-gap: 2rem;
         align-items: center;
         */
-    }
-
-    &__item a {
-        color: white;
-        text-decoration: none;
-        fill: white;
     }
 
     &__item-icon {

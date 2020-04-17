@@ -73,10 +73,9 @@
         */
     }
 
-    &__item a {
+    &__item a, use {
         color: white;
         text-decoration: none;
-        fill: white;
     }
 
     &__item-icon {

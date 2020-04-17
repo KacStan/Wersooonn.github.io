@@ -59,6 +59,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 10rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-primary {
+      font-size: 7rem; } }
 
 h2 {
   font-size: 5rem;
@@ -394,10 +397,17 @@ h3 {
     grid-template-rows: min-content repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .story__text-box {
+        grid-template-rows: repeat(3, min-content);
+        grid-row-gap: 1rem; } }
     .story__text-box--text {
       grid-column: 1 / -1; }
     .story__text-box--help {
       grid-column: 1 / -1; }
+      @media only screen and (max-width: 37.5em) {
+        .story__text-box--help {
+          padding-bottom: 2rem; } }
     .story__text-box button {
       display: none; }
   .story__stars {
@@ -465,10 +475,12 @@ h3 {
       display: none; } }
   .navigation__logo-box img {
     height: 6rem;
-    margin: 1rem 0 0 1.5rem; }
+    margin: 1rem 0 0 1.5rem;
+    cursor: pointer; }
   .navigation__list {
     font-size: 1.6rem;
     list-style: none;
+    cursor: pointer;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -482,6 +494,10 @@ h3 {
     @media only screen and (max-width: 37.5em) {
       .navigation__list {
         font-size: 1.3rem; } }
+  .navigation__item a {
+    color: white;
+    text-decoration: none;
+    fill: white; }
   .navigation__item-icon {
     height: 2rem;
     width: 2rem;

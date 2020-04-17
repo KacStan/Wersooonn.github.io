@@ -74,7 +74,7 @@
 
         @include respond(phone) {
             grid-template-rows: repeat(3,min-content);
-            grid-row-gap: 1rem;
+            grid-row-gap: 2re,;
         }
 
         &--text {
@@ -83,10 +83,6 @@
 
         &--help {
             grid-column: 1 / -1;
-
-            @include respond(phone) {
-               padding-bottom: 2rem;
-            }
         }
 
         button {

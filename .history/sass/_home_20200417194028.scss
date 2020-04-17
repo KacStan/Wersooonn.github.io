@@ -76,7 +76,10 @@
     &__item a {
         color: white;
         text-decoration: none;
-        fill: white;
+    }
+    &__item svg {
+        color: white;
+        text-decoration: none;
     }
 
     &__item-icon {

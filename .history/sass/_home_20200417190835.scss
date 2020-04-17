@@ -51,7 +51,12 @@
         list-style: none;
         cursor: pointer;
 
-
+       .navigation__item {
+        &:link,
+        &:visited {
+            color: #fff;
+        }
+       }
 
         @include respond(phone) {
             font-size: 1.3rem;
@@ -71,12 +76,6 @@
         grid-column-gap: 2rem;
         align-items: center;
         */
-    }
-
-    &__item a {
-        color: white;
-        text-decoration: none;
-        fill: white;
     }
 
     &__item-icon {

@@ -42,7 +42,6 @@
         img {
             height: 6rem;
             margin: 1rem 0 0 1.5rem;
-            cursor: pointer;
         }
     }
 
@@ -50,8 +49,6 @@
         font-size: $defoult-font-size;
         list-style: none;
         cursor: pointer;
-
-
 
         @include respond(phone) {
             font-size: 1.3rem;
@@ -73,16 +70,11 @@
         */
     }
 
-    &__item a {
-        color: white;
-        text-decoration: none;
-        fill: white;
-    }
-
     &__item-icon {
         height: 2rem;
         width: 2rem;
         fill: #fff;
+        cursor: pointer;
     }
 }
 
