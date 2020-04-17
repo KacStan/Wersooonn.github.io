@@ -1,0 +1,13 @@
+.btn {
+
+    &__send {
+        background-color: $color-primary;
+        color: #fff;
+        border: none;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+        width: 15rem;
+        height: 3rem;
+        border-radius: 5rem;
+    }
+}

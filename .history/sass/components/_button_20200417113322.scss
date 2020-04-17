@@ -1,0 +1,26 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        height: 3rem;
+        width: 10rem;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+
+        // Change gor the <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+    &__send {
+        background-color: $color-primary;
+        color: #fff;
+
+        :hover {
+            transform: scale(1.5);
+        }
+    }
+}

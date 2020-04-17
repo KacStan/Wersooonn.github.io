@@ -1,0 +1,45 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        height: 3rem;
+        width: 10rem;
+        margin: 2rem 0;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+
+        // Change gor the <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow:  0 0.8rem 1rem rgba(0,0,0, 0.4);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow:  0 .3rem 1rem rgba(0,0,0, 0.4);
+    }
+
+    &__send {
+        background-color: $color-primary;
+        color: #fff;
+
+        :hover {
+            transform: scale(1.5);
+        }
+    }
+}

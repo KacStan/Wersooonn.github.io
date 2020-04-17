@@ -1,0 +1,9 @@
+.btn {
+    background-color: $color-primary!important;
+
+    &__send {
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+        width: 5rem;
+    }
+}
